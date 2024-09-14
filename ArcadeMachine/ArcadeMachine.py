@@ -1,3 +1,31 @@
+"""
+This module contains class definitions for arcade machines, including abstract and concrete classes.
+It also includes a class for games and a class for managing the arcade catalog.
+The module provides functionality for customizing arcade machines, adding games, and completing purchases.
+
+
+Author: Julian David Celis Giraldo <jdcelisg@udistrital.edu.co>
+
+This file is part of PyCalculator-UD.
+
+ArcadeMachine is free software: you can redistribute it and/or 
+modify it under the terms of the GNU General Public License as 
+published by the Free Software Foundation, either version 3 of 
+the License, or (at your option) any later version.
+
+ArcadeMAchine is distributed in the hope that it will be useful, 
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License 
+along with ArcadeMachine If not, see <https://www.gnu.org/licenses/>. 
+"""
+
+# Google Doc Python: python documentation style guide
+# Doc String
+
+
 from abc import ABC, abstractmethod
 from enum import Enum
 
