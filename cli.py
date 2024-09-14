@@ -20,17 +20,24 @@ You should have received a copy of the GNU General Public License
 along with PyCalculator-UD. If not, see <https://www.gnu.org/licenses/>. 
 """
 
-# Google Doc Python: Documentación python para cada método
+# Google Doc Python: python documentation style guide
 # Doc String
 from ArcadeMachine import ArcadeCatalog, Game
-
-# Implementation of an arcade catalog
+    
 def main():
+    """
+    Main function to interact with the arcade catalog.
+    This function allows the user to select a machine type,
+    view available games, add games to the machine,
+    and complete the purchase by entering customer details.
+    """
+    
     catalog = ArcadeCatalog()
 
     print("Welcome to the Arcade Machine Catalog.")
     while True:
         try:
+            # Prompt user to select the type of arcade machine
             machine_type = int(input("\nSelect the machine type: 1. Modern, 2. Retro: "))
             break
         except ValueError:
@@ -62,5 +69,6 @@ game8 = Game("FIFA 22", 8, "modern")
 game9 = Game("Super Mario Bros", 9, "retro")
 game10 = Game("Tetris", 10, "retro")
 
+# call the method main(), start here
 if __name__ == "__main__":
     main()

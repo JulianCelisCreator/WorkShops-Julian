@@ -6,7 +6,7 @@ class Material(Enum):
     """
     Enum for arcade machine materials.
 
-    This enum defines the different types of materials available for the construction of arcade machines.
+    This enum defines the different types of materials available
     for the construction of arcade machines.
 
     """
@@ -94,11 +94,13 @@ class ArcadeMachine(ABC):
     # Show machine information
     def show_info(self):
         """
-        Displays detailed information about the arcade machine, including material, color, lights, sound system, and the number of games added.
+        Displays detailed information about the arcade machine, including material, color,
+        lights, sound system, and the number of games added.
 
         Returns:
         --------
-        str : A string containing the material, color, lights, sound, and the number of games installed.
+        str : A string containing the material, color, lights, sound, and 
+        the number of games installed.
         """
         return (f"Material: {self._material.value}, Color: {self._color.value}, "
                 f"Lights: {self._lights.value}, Sound: {self._sound}, "
@@ -190,7 +192,9 @@ class Game:
     available_games = []  # Available games in the catalog (Class attribute)
 
     def __init__(self, title, code, type):
-        """Initializes a new game instance and adds it to the class-level list of available games."""
+        """Initializes a new game instance and adds it to the class-level 
+        list of available games.
+        """
         self.title = title
         self.code = code
         self.type = type  # "modern" or "retro"
@@ -231,7 +235,9 @@ class Customer:
         self.phone = phone
 
     def __str__(self):
-        """Returns a string representation of the customer, including their name, address, and phone number."""
+        """Returns a string representation of the customer, including their name,
+        address, and phone number.
+        """
         return f"Customer: {self.name}, Address: {self.address}, Phone: {self.phone}"
 
 
@@ -355,7 +361,8 @@ class ArcadeCatalog:
 
     def get_sound(self):
         """
-        Prompts the user to specify whether they want to add sound or speakers to the arcade machine.
+        Prompts the user to specify whether they want to 
+        add sound or speakers to the arcade machine.
 
         Returns:
         -----------
